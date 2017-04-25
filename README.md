@@ -26,6 +26,18 @@ Only show affected files
 
 `git diff --name-only version1..version2`
 
+### Viewing history
+
+View all changes to a specific file
+
+`git log -p filename`
+
+Using `-p` generates a patch of the differences. Removing this will show the commit messages
+
+`git log -p --follow filename`
+
+`--follow` will show changes to a file across renames
+
 ## Configuration
 
 ### Useful aliases
