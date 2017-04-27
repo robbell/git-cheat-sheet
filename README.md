@@ -38,6 +38,10 @@ Using `-p` generates a patch of the differences. Removing this will show the com
 
 `--follow` will show changes to a file across renames
 
+View all files under source control
+
+`git ls-files`
+
 ## Configuration
 
 ### Useful aliases
