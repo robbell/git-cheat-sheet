@@ -42,6 +42,12 @@ View all files under source control:
 
 `git ls-files`
 
+### Branching
+
+Remove local pointers to remote branches which no longer exist:
+
+`git remote prune origin`
+
 ## Configuration
 
 ### Useful aliases
