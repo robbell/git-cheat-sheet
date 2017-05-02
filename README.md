@@ -52,6 +52,10 @@ Get all branches which have been merged into a named branch:
 
 `git branch --merged branchname`
 
+Or all branches _not_ merged:
+
+`git branch --no-merged branchname`
+
 ## Configuration
 
 ### Useful aliases
