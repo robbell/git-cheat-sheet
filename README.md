@@ -48,6 +48,10 @@ Remove local pointers to remote branches which no longer exist:
 
 `git remote prune origin`
 
+Get all branches which have been merged into a named branch:
+
+`git branch --merged branchname`
+
 ## Configuration
 
 ### Useful aliases
