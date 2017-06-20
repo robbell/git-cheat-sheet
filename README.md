@@ -69,6 +69,10 @@ Or all branches _not_ merged:
 
 ### Configuring P4Merge
 
+`git config --global diff.tool p4merge`
+
+`git config --global difftool.p4merge.cmd 'p4merge $LOCAL $REMOTE'`
+
 `git config --global merge.tool p4merge`
 
 `git config --global mergetool.p4merge.cmd 'p4merge $BASE $LOCAL $REMOTE $MERGED'`
