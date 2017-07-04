@@ -56,6 +56,18 @@ Or all branches _not_ merged:
 
 `git branch --no-merged branchname`
 
+## Common problems
+
+### Accidentally commiting to develop locally
+
+Create new branch at the same point:
+
+`git checkout -b feature/branch-i-meant-to-create`
+
+Point develop back to the same commit as origin/develop:
+
+`git branch -f develop origin/develop`
+
 ## Configuration
 
 ### Useful aliases
