@@ -56,6 +56,12 @@ Or all branches _not_ merged:
 
 `git branch --no-merged branchname`
 
+Deleting a remote branch:
+
+`git push origin --delete branchname`
+
+Use `-D` if the branch hasn't been merged as a shortcut to `--delete --force`
+
 ## Common problems
 
 ### Accidentally commiting to develop locally
