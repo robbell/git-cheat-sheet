@@ -94,3 +94,7 @@ Point develop back to the same commit as origin/develop:
 `git config --global merge.tool p4merge`
 
 `git config --global mergetool.p4merge.cmd 'p4merge $BASE $LOCAL $REMOTE $MERGED'`
+
+### Configuring VS Code as the default editor
+
+`git config --global core.editor "code --wait"`
