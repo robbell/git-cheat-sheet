@@ -76,25 +76,26 @@ Point develop back to the same commit as origin/develop:
 
 ## Configuration
 
-### Useful aliases
+Add the following to your .gitconfig file (located in C:\Users\[username]):
 
-    alias.co=checkout
-    alias.ci=commit
-    alias.st=status
-    alias.br=branch
-    alias.hist=log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-    alias.unstage=reset HEAD --
-
-### Configuring P4Merge
-
-`git config --global diff.tool p4merge`
-
-`git config --global difftool.p4merge.cmd 'p4merge $LOCAL $REMOTE'`
-
-`git config --global merge.tool p4merge`
-
-`git config --global mergetool.p4merge.cmd 'p4merge $BASE $LOCAL $REMOTE $MERGED'`
-
-### Configuring VS Code as the default editor
-
-`git config --global core.editor "code --wait"`
+```
+[alias]
+    co=checkout
+    ci=commit
+    st=status
+    br=branch
+    hist=log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    unstage=reset HEAD --
+[diff]
+	tool = p4merge
+[difftool "p4merge"]
+	cmd = p4merge $LOCAL $REMOTE
+[merge]
+	tool = p4merge
+[mergetool "p4merge"]
+	cmd = p4merge $BASE $LOCAL $REMOTE $MERGED
+[core]
+	editor = code --wait
+[mergetool]
+	keepBackup = false
+```
