@@ -85,6 +85,7 @@ Add the following to your .gitconfig file (located in C:\Users\[username]):
     st=status
     br=branch
     hist=log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    la=log --all --graph --oneline --decorate
     unstage=reset HEAD --
 [diff]
 	tool = p4merge
@@ -99,3 +100,7 @@ Add the following to your .gitconfig file (located in C:\Users\[username]):
 [mergetool]
 	keepBackup = false
 ```
+#### Adding aliases at the command line
+
+    git config --global alias.[Name] [Definition]
+    git config --global alias.la 'log --all --graph --oneline --decorate'
